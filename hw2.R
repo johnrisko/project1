@@ -11,4 +11,6 @@ Learning = data.frame(Visual, Aural, Read_Write, Kinesthetic)
 ##When running R, please make sure to change Path to whereever you launched the .txt file from, url to github won't work
 PE = readLines("~/Dropbox/School/Statistics/Stat 157 Fall 2013/project1/personal.txt")
 Personal = gsub("/", " ", PE)
+Personal = Personal[Personal!=""]
+
 Personal = tolower(Personal)
